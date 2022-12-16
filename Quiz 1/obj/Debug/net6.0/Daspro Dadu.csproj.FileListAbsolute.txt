@@ -1,0 +1,15 @@
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\bin\Debug\net6.0\Daspro Dadu.exe
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\bin\Debug\net6.0\Daspro Dadu.deps.json
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\bin\Debug\net6.0\Daspro Dadu.runtimeconfig.json
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\bin\Debug\net6.0\Daspro Dadu.dll
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\bin\Debug\net6.0\Daspro Dadu.pdb
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.csproj.AssemblyReference.cache
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.AssemblyInfoInputs.cache
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.AssemblyInfo.cs
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.csproj.CoreCompileInputs.cache
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.dll
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\refint\Daspro Dadu.dll
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.pdb
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\Daspro Dadu.genruntimeconfig.cache
+c:\Users\ASUS TUF GAMING\Desktop\Daspro Dadu\obj\Debug\net6.0\ref\Daspro Dadu.dll

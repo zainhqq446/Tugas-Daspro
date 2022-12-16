@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>To Do App</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>To Do Apps</h1>
+        <input type="text" v-model="msg">
+        <button v-on:click="addmsg">Tambah List</button>
+        <ul>
+            <li v-for="(m,index) in Todo" v-on:click="deletemsg(index)">{{m}}</li>
+        </ul>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                Todo: [],
+                msg: ''
+            },
+            methods: {
+                addmsg: function() {
+                    if (this.msg.trim() == '') {
+
+                        return;
+                    }
+                    this.Todo.push(this.msg);
+                    this.msg = '';
+                },
+                deletemsg: function(index) {
+                    this.Todo.splice(index, 1);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

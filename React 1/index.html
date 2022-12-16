@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React 1</title>
+<style>
+    body {
+        background-color: #ddd;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #app {
+        border: 1px solid black;
+        padding: 4px 16px;
+        width: fit-content;
+    }
+
+    .hapus {
+        color: red;
+    }
+
+    ul li {
+        background-color:aquamarine;
+        padding: 4px;
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            MKs: [{
+                id: Math.random(),
+                msg: 'Dasar Pemrograman'
+            }],
+            msg: '',
+            hapus: false
+        }
+    }
+
+    Add() {
+        var mk = this.state.MKs;
+        var nk = {
+            id: Math.random(),
+            msg: this.state.msg
+        }
+        mk.push(nk);
+        this.setState({
+            MKs: mk,
+        });
+    }
+
+    Remove(id) {
+        var mk = this.state.MKs;
+        for(var i = 0; i < mk.length; i++) {
+            if(id == mk[i].id) {
+                mk.splice(i, 1);
+                break;
+            }
+        }
+        this.setState({
+            MKs: mk,
+            hapus: true
+        })
+    }
+
+    updateMsg(event) {
+        this.setState({
+            msg: event.target.value
+        })
+    }
+
+    render() {
+        var hapus = '';
+        if(this.state.hapus) {
+            hapus = 'Mata kuliah dihapus!';
+            this.state.hapus = false;
+        }
+        var li = this.state.MKs.map((el) => {
+                return <li key={el.id} onClick={this.Remove.bind(this, el.id)}>{el.msg}</li>
+            }
+        );
+        return(
+            <div>
+                <h1>List Mata Kuliah</h1>
+                <input type="text" value={this.state.msg} onChange={this.updateMsg.bind(this)}/>
+                <button onClick={this.Add.bind(this)}>Tambah Mata Kuliah</button>
+                <ul>
+                    {li}
+                </ul>
+                <p class='hapus'>{hapus}</p>
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<App/>, document.querySelector('#app'));
+</script>
+
+</body>
+</html>
